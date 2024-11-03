@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run & Debug",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "env": {
+        "DB_USER": "${env:DB_USER}",
+        "DB_PASS": "${env:DB_PASS}",
+        "DB_NAME": "${env:DB_NAME}",
+        "DB_HOST": "${env:DB_HOST}",
+        "DB_PORT": "${env:DB_PORT}",
+        "PORT": "${env:PORT}"
+      },
+      "args": [],
+      "buildFlags": ""
+    }
+  ]
+}
