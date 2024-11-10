@@ -20,6 +20,9 @@ func ConnectDatabase(user, password, host, port, dbname string) *gorm.DB {
 	if err := DB.AutoMigrate(&User{}); err != nil {
 		log.Fatalf("Auto-migration gagal: %v", err)
 	}
+	if err := DB.AutoMigrate(&Product{}); err != nil {
+		log.Fatalf("Auto-migration gagal: %v", err)
+	}
 
 	return DB
 }
